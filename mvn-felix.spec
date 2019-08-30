@@ -4,7 +4,7 @@
 #
 Name     : mvn-felix
 Version  : 1.0.0
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/felix/felix-parent/1.2.1/felix-parent-1.2.1.pom
