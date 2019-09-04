@@ -4,7 +4,7 @@
 #
 Name     : mvn-felix
 Version  : 1.0.0
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/felix/felix-parent/1.2.1/felix-parent-1.2.1.pom
@@ -13,14 +13,12 @@ Source3  : https://repo1.maven.org/maven2/org/apache/felix/felix-parent/3/felix-
 Source4  : https://repo1.maven.org/maven2/org/apache/felix/felix-parent/4/felix-parent-4.pom
 Source5  : https://repo1.maven.org/maven2/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
 Source6  : https://repo1.maven.org/maven2/org/apache/felix/felix/1.0.2/felix-1.0.2.pom
-Source7  : https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.jar
-Source8  : https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.pom
-Source9  : https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.jar
-Source10  : https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom
-Source11  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
-Source12  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
-Source13  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.jar
-Source14  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.pom
+Source7  : https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.jar
+Source8  : https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom
+Source9  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
+Source10  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+Source11  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.jar
+Source12  : https://repo1.maven.org/maven2/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -77,29 +75,23 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/felix/
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/felix/1.0.2
 cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/felix/1.0.2/felix-1.0.2.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.bundlerepository/1.6.6
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.bundlerepository/1.6.6
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.pom
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.service.obr/1.0.1
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.jar
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.service.obr/1.0.1
-cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.pom
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.osgi.service.obr/1.0.1/org.osgi.service.obr-1.0.1.pom
 
 
 %files
@@ -113,8 +105,6 @@ cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/felix/org.o
 /usr/share/java/.m2/repository/org/apache/felix/felix-parent/4/felix-parent-4.pom
 /usr/share/java/.m2/repository/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
 /usr/share/java/.m2/repository/org/apache/felix/felix/1.0.2/felix-1.0.2.pom
-/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.jar
-/usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.bundlerepository/1.6.6/org.apache.felix.bundlerepository-1.6.6.pom
 /usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.jar
 /usr/share/java/.m2/repository/org/apache/felix/org.apache.felix.utils/1.6.0/org.apache.felix.utils-1.6.0.pom
 /usr/share/java/.m2/repository/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.jar
