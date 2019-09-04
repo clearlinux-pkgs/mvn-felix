@@ -10,3 +10,6 @@ ec1be75f7b167879e6723d4b5365a4f12f1c661d/org.osgi.core-1.0.0.pom
 d68785934f50b02be7c5c9012c50c8ab8920d545/felix-parent-3.pom
 02e894f57eb21c8eb788a2e7425dc187ee005f9f/org.apache.felix.utils-1.6.0.jar
 b67630fafea5a5a6577e4d9d013e64b857db12a7/org.apache.felix.utils-1.6.0.pom
+8d99b67d30de50d2afd3caf36afa0c7f08879c1c/felix-parent-4.pom
+83e4b7fda360d32a44cb2e17d159ddf40c334f96/org.apache.felix.bundlerepository-1.6.6.jar
+e3db46c54830c1eaacc0b196c6420a696e4f8634/org.apache.felix.bundlerepository-1.6.6.pom
